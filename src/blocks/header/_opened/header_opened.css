@@ -1,4 +1,6 @@
 .header_opened {
   margin-top: 169px;
-  background-color: yellow;
+  position: relative;
+  align-items: center;
+  border: solid 1px #545454;
 }

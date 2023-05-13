@@ -15,8 +15,6 @@ const Header = ({ handleSignOut, email }) => {
   const handleMenu = () => {
     setOpen(!open);
   };
-  console.log(open);
-
   return (
     <header className={`header ${open && "header_opened"}`}>
       <img src={logoImage} alt="Around U.S. logo" className="header__logo" />

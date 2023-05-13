@@ -1,5 +1,9 @@
 .header__user-info_opened {
-  height: 142px;
-  background-color: red;
-  display: block;
+  min-height: 142px;
+  gap: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: -142px;
 }
