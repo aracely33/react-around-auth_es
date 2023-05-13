@@ -23,6 +23,7 @@ const Register = () => {
     e.preventDefault();
     const { password, email } = formData;
     auth.register(password, email).then((res) => {
+      console.log(res);
       if (res.data) {
         navigate("/signin", { state: "success" });
       } else {

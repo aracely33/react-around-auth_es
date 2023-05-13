@@ -6,6 +6,8 @@ import InfoTooltip from "./InfoTooltip";
 const Login = ({ handleLogin }) => {
   const [formData, setFormData] = React.useState({});
   const [infoToolOpen, setInfoToolOpen] = React.useState(false);
+
+  const [error, setError] = React.useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -18,6 +20,7 @@ const Login = ({ handleLogin }) => {
   };
   const handleCloseInfoTool = () => {
     setInfoToolOpen(false);
+
     navigate("/signin", { state: {} });
   };
   const onLogin = (e) => {
@@ -33,14 +36,18 @@ const Login = ({ handleLogin }) => {
         }
       })
       .catch((err) => {
+        setInfoToolOpen(true);
+        setError(true);
         console.log(err);
       });
   };
+
   useEffect(() => {
     if (location.state === "success") {
       setInfoToolOpen(true);
     }
   }, [location]);
+
   return (
     <>
       <div className="login">
@@ -83,7 +90,7 @@ const Login = ({ handleLogin }) => {
         </form>
       </div>
       <InfoTooltip
-        error={false}
+        error={error}
         infoToolOpen={infoToolOpen}
         handleClose={handleCloseInfoTool}
       />

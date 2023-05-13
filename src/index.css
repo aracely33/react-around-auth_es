@@ -3,8 +3,15 @@
 @import url(./blocks/main/main.css);
 @import url(./blocks/root/root.css);
 @import url(./blocks/header/header.css);
+@import url(./blocks/header/_opened/header_opened.css);
 @import url(./blocks/header/__logo/header__logo.css);
 @import url(./blocks/header/__link/header__link.css);
+@import url(./blocks/header/__menu-icon/header__menu-icon.css);
+@import url(./blocks/header/__close-icon/header__close-icon.css);
+@import url(./blocks/header/__email/header__email.css);
+@import url(./blocks/header/__user-info/header__user-info.css);
+@import url(./blocks/header/__user-info/_opened/header__user-info_opened.css);
+@import url(./blocks/header/__logout-button/header__logout-button.css);
 
 @import url(./blocks/profile/profile.css);
 @import url(./blocks/profile/__avatar-container/profile__avatar-container.css);
@@ -44,12 +51,14 @@
 @import url(./blocks/popup/_type/popup_type-form-change-profile-avatar.css);
 @import url(./blocks/popup/_type/popup_type-image.css);
 @import url(./blocks/popup/__image/popup__image.css);
+@import url(./blocks/popup/__image/_type-infoTooltip/popup__image_type-infoTooltip.css);
 @import url(./blocks/popup/__imagedescription/popup__imagedescription.css);
 @import url(./blocks/popup/__container/popup__container.css);
 @import url(./blocks/popup/__container/_function/popup__container_function-form.css);
 @import url(./blocks/popup/__container/_function/popup__container_function-image.css);
 @import url(./blocks/popup/__container/_function/popup__container_function-delete-card-popup.css);
 @import url(./blocks/popup/__container/_function/popup__container_function-change-profile-avatar.css);
+@import url(./blocks/popup/__container/_function/popup__container_function-infoToolTip.css);
 
 @import url(./blocks/popup/__form/popup__form.css);
 @import url(./blocks/popup/__input/popup__input.css);
@@ -58,6 +67,7 @@
 @import url(./blocks/popup/__error/popup__error.css);
 @import url(./blocks/popup/__error/_visible/popup__error_visible.css);
 @import url(./blocks/popup/__input/_type/popup__input_type_error.css);
+@import url(./blocks/popup/__message/popup__message.css);
 
 @import url(./blocks/login/login.css);
 

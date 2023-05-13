@@ -7,3 +7,10 @@
   text-align: center;
   color: #ffffff;
 }
+
+@media screen and (max-width: 773px) {
+  .header__link {
+    font-size: 10px;
+    max-width: 50px;
+  }
+}

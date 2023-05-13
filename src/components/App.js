@@ -238,7 +238,7 @@ function App() {
   return (
     <>
       <UserContext.Provider value={currentUser}>
-        <Header handleSignOut={handleSignOut} />
+        <Header handleSignOut={handleSignOut} email={email} />
         <Routes>
           <Route
             path="/"

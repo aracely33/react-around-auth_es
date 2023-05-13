@@ -28,9 +28,7 @@
 
 @media screen and (max-width: 321px) {
   .close-button {
-    min-width: 26px;
-    min-height: 26px;
-    top: -39.62px;
-    right: 0;
+    top: -50px;
+    right: 125px;
   }
 }
